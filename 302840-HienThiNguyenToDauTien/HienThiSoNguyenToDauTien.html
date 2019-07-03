@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let number = Number(prompt('Mời bạn nhập số lượng số nguyên tố'));
+    //
+    // function check(number) {
+    //     if (number < 2) {
+    //         return 0;
+    //     }
+    //     for (let i = 2; i < number; i++) {
+    //         if (number % i == 0) {
+    //             return 0;
+    //         }
+    //     }
+    //     return 1;
+    // };
+    // for (let i = 2; i <= number; i++) {
+    //     if (check(i) == 1) {
+    //         document.write(i + " ");
+    //     };
+    // }
+
+    // let n = prompt("Nhập số: ");
+    // let dem = 0;
+    // for (let i = 2; i < n ; i++){
+    //     if (n%i == 0) {
+    //         dem++;
+    //     }
+    // }
+    // if (dem == 0) {
+    //     alert("số nguyên tố");
+    // }
+    // else
+    //     alert("Không phải số nguyên tố")
+
+    let num = parseInt(prompt(" N= "));
+    let count = 0;
+    let i = 2;
+    while (count < num) {
+        let dem = 0;
+        for (let j = 2; j <= (Math.sqrt(i)); j++) {
+            if (i % j == 0) {
+                dem += 1;
+            }
+        }
+        if (dem == 0) {
+            document.write(" " + i);
+            count += 1;
+        }
+        i++;
+
+    }
+</script>
+</body>
+</html>
